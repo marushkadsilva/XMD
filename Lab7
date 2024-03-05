@@ -1,0 +1,5 @@
+git init #Initialize a new Git Repository
+git add new_file.txt # Stage the new file for commit
+git commit -m "Add new_file.txt" # Commit the new file with a descriptive message
+git tag v1.0 # Tag the current commit as "v1.0"
+git log --oneline
