@@ -1,0 +1,17 @@
+git checkout -b feature-branch # Create and switch to a new branch named "feature-branch"
+
+echo "Content for new file" > new_file.txt # Create a new text file named "new_file.txt" and add content
+
+git add new_file.txt # Stage the new file for commit
+
+git commit -m "Add new_file.txt to feature-branch" # Commit the new file with a descriptive message
+
+Merge feature-branch with master
+
+git checkout master # Switch back to the master branch
+
+git merge --no-ff feature-branch -m "Merge feature-branch into master with a message" 
+
+# Merge the feature-branch into master with a custom commit message with no fast forward (no-ff)
+
+git log --oneline
