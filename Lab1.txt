@@ -1,0 +1,6 @@
+cd path/to/directory
+Create a new file
+touch filename.txt
+git add filename.txt
+Commit the 
+git commit -m "Initial commit: Add filename.txt"
