@@ -1,0 +1,58 @@
+git checkout -b source-branch
+
+# Create and add the first text file
+
+touch file1.txt
+
+echo "Content for file 1" > file1.txt
+
+git add file1.txt
+
+# Commit the first text file
+
+git commit -m "Add file1.txt"
+
+# Create and add the second text file
+
+touch file2.txt
+
+echo "Content for file 2" > file2.txt
+
+git add file2.txt
+
+# Commit the second text file
+
+git commit -m "Add file2.txt"
+
+# Create and add the third text file
+
+touch file3.txt
+
+echo "Content for file 3" > file3.txt
+git add file3.txt
+
+# Commit the third text file
+
+git commit -m "Add file3.txt"
+
+# Create and add the fourth text file
+
+touch file4.txt
+
+echo "Content for file 4" > file4.txt
+
+git add file4.txt
+
+# Commit the fourth text file
+
+git commit -m "Add file4.txt"
+
+# Switch to the master branch where the cherry-picked commits will be applied
+
+git checkout master
+
+# Cherry-pick the latest 3 commits from the source-branch to the master branch
+
+git cherry-pick <ID2>^..<ID4>
+
+git log --oneline
