@@ -1,27 +1,16 @@
 echo "Text content" > local_file.txt
-
 git add local_file.txt
-
 git commit -m "Add local_file.txt"
-
-git remote add origin URL # adding the remote repository
-
-git push origin <branch-name> # push commits to the remote repository
+git remote add origin URL 
+git push origin <branch-name> 
 
 • Add another text file directly to the remote repository:
-
 Add another file s via the repository's web interface with ‘add file’ option.
 
 • Fetch changes to the master branch and rebase:
-
-git checkout master # Switch to the local master branch
-
-git log --oneline # commit history in one line
-
-git fetch # Fetch the latest changes from the remote repository
-
-git rebase origin/master # Rebase the local master branch onto the updated remote master branch
-
-git log --oneline # commit history in one line
-
+git checkout master
+git log --oneline 
+git fetch 
+git rebase origin/master 
+git log --oneline
 git fetch
