@@ -1,0 +1,1 @@
+git log --author="JohnDoe" --since="2023-01-01" --until="2023-12-31"
