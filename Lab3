@@ -1,25 +1,7 @@
-
-
-git checkout -b feature-branch #Creates a new branch, ‘feature-branch’ and switches to it.
-
-• Add a text file to the branch:
-
+git checkout -b feature-branch 
 echo "This is a sample text file" > sample.txt
-
-git add sample.txt #adds a text file named sample.txt to the branch 
-
-• Stash the changes:
-
-git stash save "Stashing changes for now" # stashes the changes made to sample.txt.
-
-• Switch to the master branch:
-
-git checkout master #switches back to the master branch.
-
-• Return to the feature branch:
-
-git checkout feature-branch #switches back to the feature-branch where changes were stashed.
-
-• Apply the stashed changes:
-
+git add sample.txt  
+git stash save "Stashing changes for now"
+git checkout master 
+git checkout feature-branch 
 git stash apply
