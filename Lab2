@@ -1,22 +1,22 @@
 git init
-git checkout -b feature-branch # Create and switch to the feature-branch
+git checkout -b feature-branch 
 
-touch new_feature_file.txt # Create a new file
+touch new_feature_file.txt 
 
-git add new_feature_file.txt # Stage the new file for commit
+git add new_feature_file.txt
 
-git commit -m "Add new feature file" # Commit the new file
+git commit -m "Add new feature file" 
 
-git checkout master # Switch back to the master branch
+git checkout master 
 
-git ls-files #Inspecting files in the master branch before merge
+git ls-files 
 
-touch new_master_file.txt # Create another new file
+touch new_master_file.txt 
 
-git add new_master_file.txt # Stage the new file for commit
+git add new_master_file.txt 
 
-git commit -m "Add new master file" # Commit the new file
+git commit -m "Add new master file" 
 
-git merge feature-branch # Merge the feature-branch into master
+git merge feature-branch 
 
-git ls-files #Inspecting files in the master branch after merge
+git ls-files 
