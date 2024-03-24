@@ -1,3 +1,4 @@
+git init
 cd path/to/directory
 Create a new file
 touch filename.txt
