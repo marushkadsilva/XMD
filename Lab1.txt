@@ -1,5 +1,5 @@
-git init
 cd path/to/directory
+git init
 Create a new file
 touch filename.txt
 git add filename.txt
